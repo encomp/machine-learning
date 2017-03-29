@@ -11801,7 +11801,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Import libraries</span>
@@ -11853,7 +11853,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span>
@@ -11862,7 +11862,7 @@ div#notebook {
 <span class="n">n_students</span> <span class="o">=</span> <span class="n">student_data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 
 <span class="c1"># Calculate number of features</span>
-<span class="n">n_features</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">student_data</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+<span class="n">n_features</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">student_data</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
 
 <span class="c1"># Calculate passing students</span>
 <span class="n">n_passed</span> <span class="o">=</span> <span class="n">student_data</span><span class="p">[</span><span class="n">student_data</span><span class="p">[</span><span class="s1">&#39;passed&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;yes&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
@@ -11895,7 +11895,7 @@ div#notebook {
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Total number of students: 395
-Number of features: 31
+Number of features: 30
 Number of students who passed: 265
 Number of students who failed: 130
 Graduation rate of the class: 67.09%
@@ -11921,7 +11921,7 @@ Graduation rate of the class: 67.09%
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Extract feature columns</span>
@@ -12003,7 +12003,7 @@ Feature values:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">preprocess_features</span><span class="p">(</span><span class="n">X</span><span class="p">):</span>
@@ -12074,7 +12074,7 @@ Feature values:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Import any additional functionality you may need here</span>
@@ -12207,7 +12207,7 @@ Testing set has 95 samples.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[106]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">train_classifier</span><span class="p">(</span><span class="n">clf</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">):</span>
@@ -12281,7 +12281,7 @@ Testing set has 95 samples.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[114]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># from sklearn import model_A</span>
@@ -12346,126 +12346,126 @@ Testing set has 95 samples.
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Training a SVC using a training set size of 100. . .
-Trained model in 0.0016 seconds
-Made predictions in 0.0008 seconds.
-F1 score for training set: 0.8889.
+Trained model in 0.0025 seconds
 Made predictions in 0.0018 seconds.
+F1 score for training set: 0.8889.
+Made predictions in 0.0012 seconds.
 F1 score for test set: 0.8077.
 
 
 Training a SVC using a training set size of 200. . .
-Trained model in 0.0039 seconds
-Made predictions in 0.0026 seconds.
+Trained model in 0.0063 seconds
+Made predictions in 0.0060 seconds.
 F1 score for training set: 0.8669.
-Made predictions in 0.0014 seconds.
+Made predictions in 0.0023 seconds.
 F1 score for test set: 0.8205.
 
 
 Training a SVC using a training set size of 300. . .
-Trained model in 0.0101 seconds
-Made predictions in 0.0053 seconds.
+Trained model in 0.0133 seconds
+Made predictions in 0.0100 seconds.
 F1 score for training set: 0.8565.
-Made predictions in 0.0017 seconds.
+Made predictions in 0.0034 seconds.
 F1 score for test set: 0.8205.
 
 
 ------------------------------------------------------------------------
 Training a GaussianNB using a training set size of 100. . .
-Trained model in 0.0008 seconds
+Trained model in 0.0007 seconds
 Made predictions in 0.0003 seconds.
 F1 score for training set: 0.5631.
-Made predictions in 0.0014 seconds.
+Made predictions in 0.0003 seconds.
 F1 score for test set: 0.3956.
 
 
 Training a GaussianNB using a training set size of 200. . .
-Trained model in 0.0012 seconds
-Made predictions in 0.0006 seconds.
+Trained model in 0.0007 seconds
+Made predictions in 0.0003 seconds.
 F1 score for training set: 0.7942.
-Made predictions in 0.0005 seconds.
+Made predictions in 0.0004 seconds.
 F1 score for test set: 0.6875.
 
 
 Training a GaussianNB using a training set size of 300. . .
-Trained model in 0.0014 seconds
-Made predictions in 0.0006 seconds.
-F1 score for training set: 0.7677.
+Trained model in 0.0011 seconds
 Made predictions in 0.0005 seconds.
+F1 score for training set: 0.7677.
+Made predictions in 0.0003 seconds.
 F1 score for test set: 0.7302.
 
 
 ------------------------------------------------------------------------
 Training a DecisionTreeClassifier using a training set size of 100. . .
-Trained model in 0.0008 seconds
+Trained model in 0.0009 seconds
 Made predictions in 0.0002 seconds.
 F1 score for training set: 1.0000.
-Made predictions in 0.0007 seconds.
+Made predictions in 0.0002 seconds.
 F1 score for test set: 0.6984.
 
 
 Training a DecisionTreeClassifier using a training set size of 200. . .
-Trained model in 0.0015 seconds
+Trained model in 0.0017 seconds
 Made predictions in 0.0004 seconds.
 F1 score for training set: 1.0000.
-Made predictions in 0.0005 seconds.
+Made predictions in 0.0002 seconds.
 F1 score for test set: 0.7059.
 
 
 Training a DecisionTreeClassifier using a training set size of 300. . .
-Trained model in 0.0020 seconds
-Made predictions in 0.0004 seconds.
+Trained model in 0.0026 seconds
+Made predictions in 0.0003 seconds.
 F1 score for training set: 1.0000.
-Made predictions in 0.0007 seconds.
+Made predictions in 0.0002 seconds.
 F1 score for test set: 0.7727.
 
 
 ------------------------------------------------------------------------
 Training a KNeighborsClassifier using a training set size of 100. . .
-Trained model in 0.0008 seconds
-Made predictions in 0.0021 seconds.
+Trained model in 0.0006 seconds
+Made predictions in 0.0019 seconds.
 F1 score for training set: 0.8750.
-Made predictions in 0.0022 seconds.
+Made predictions in 0.0015 seconds.
 F1 score for test set: 0.7755.
 
 
 Training a KNeighborsClassifier using a training set size of 200. . .
-Trained model in 0.0010 seconds
-Made predictions in 0.0042 seconds.
+Trained model in 0.0007 seconds
+Made predictions in 0.0029 seconds.
 F1 score for training set: 0.8534.
-Made predictions in 0.0023 seconds.
+Made predictions in 0.0022 seconds.
 F1 score for test set: 0.8163.
 
 
 Training a KNeighborsClassifier using a training set size of 300. . .
-Trained model in 0.0012 seconds
-Made predictions in 0.0063 seconds.
+Trained model in 0.0009 seconds
+Made predictions in 0.0064 seconds.
 F1 score for training set: 0.8610.
-Made predictions in 0.0054 seconds.
+Made predictions in 0.0033 seconds.
 F1 score for test set: 0.8143.
 
 
 ------------------------------------------------------------------------
 Training a RandomForestClassifier using a training set size of 100. . .
-Trained model in 0.0261 seconds
-Made predictions in 0.0065 seconds.
+Trained model in 0.0249 seconds
+Made predictions in 0.0063 seconds.
 F1 score for training set: 0.9931.
-Made predictions in 0.0062 seconds.
+Made predictions in 0.0053 seconds.
 F1 score for test set: 0.7591.
 
 
 Training a RandomForestClassifier using a training set size of 200. . .
-Trained model in 0.0254 seconds
-Made predictions in 0.0065 seconds.
+Trained model in 0.0243 seconds
+Made predictions in 0.0067 seconds.
 F1 score for training set: 0.9929.
-Made predictions in 0.0065 seconds.
+Made predictions in 0.0053 seconds.
 F1 score for test set: 0.7234.
 
 
 Training a RandomForestClassifier using a training set size of 300. . .
-Trained model in 0.0536 seconds
-Made predictions in 0.0079 seconds.
+Trained model in 0.0357 seconds
+Made predictions in 0.0068 seconds.
 F1 score for training set: 0.9876.
-Made predictions in 0.0107 seconds.
+Made predictions in 0.0126 seconds.
 F1 score for test set: 0.7943.
 
 
@@ -12644,7 +12644,7 @@ F1 score for test set: 0.7943.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[115]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
@@ -14681,7 +14681,7 @@ tEneSdZ5BzllFMlA8yUVdiyjiOVcVZ+5rnomudXWl3zEm65JHjXaweCnTAqw75LkNcNhSXI/MhDg
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
-<p>From a 10,000 foot view the Support Vector Machines algorithm separates the information into two different sets. The first set corresponds to the students that require additional assistance and the second set identifies students that does not require further assistance. This is accomplish by training the algorithm using different characteristics of the data such as gender, age, internet access, among others. After performing the proper training of our algorithm then it will try to separate students by drawing a line between both sets. In case this cannot be possible, we could tune the algorithm using a different kernel to allow the use of curves to be able to separate the two sets. Using SVM will allow us to add additional features and data to be able to identify students that required assistance in order to help them graduate.</p>
+<p>From a 10,000 foot view the Support Vector Machines algorithm separates the information into two different sets. The first set corresponds to the students that require additional assistance and the second set identifies students that does not require further assistance. This is accomplish by training the algorithm using previous students with different characteristics such as gender, age, internet access, among others. Such characteristics are used to create a function that draws a boundary between the students who graduated and those who didn't. This boundary should be drawn to maximize the distance between the two sets of students. After performing the proper training of our algorithm. The SVM can look at new student's data and predict (using the function) whether or not students might need early intervention before they fail to graduate. At times, it is not easy to draw a decision boundary in lower dimensions (like 2d), therefore, the SVM will separate the two sets of students in higher dimension space (like a 3d) in wich the two sets can be separated.</p>
 
 </div>
 </div>
@@ -14712,7 +14712,7 @@ tEneSdZ5BzllFMlA8yUVdiyjiOVcVZ+5rnomudXWl3zEm65JHjXaweCnTAqw75LkNcNhSXI/MhDg
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[109]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Import &#39;GridSearchCV&#39; and &#39;make_scorer&#39;</span>
@@ -14757,9 +14757,9 @@ tEneSdZ5BzllFMlA8yUVdiyjiOVcVZ+5rnomudXWl3zEm65JHjXaweCnTAqw75LkNcNhSXI/MhDg
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>{&#39;kernel&#39;: &#39;rbf&#39;, &#39;C&#39;: 100, &#39;gamma&#39;: 0.0001}
-Made predictions in 0.0054 seconds.
+Made predictions in 0.0048 seconds.
 Tuned model has a training F1 score of 0.8280.
-Made predictions in 0.0018 seconds.
+Made predictions in 0.0017 seconds.
 Tuned model has a testing F1 score of 0.8153.
 </pre>
 </div>
@@ -14771,7 +14771,7 @@ Tuned model has a testing F1 score of 0.8153.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[116]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">plot_learning_curve</span><span class="p">(</span><span class="n">clf_A</span><span class="p">,</span> <span class="s2">&quot;SVC Original&quot;</span><span class="p">,</span> <span class="n">X_train_300</span><span class="p">,</span> <span class="n">y_train_300</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
