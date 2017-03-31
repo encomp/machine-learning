@@ -12281,7 +12281,7 @@ Testing set has 95 samples.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># from sklearn import model_A</span>
@@ -12316,23 +12316,23 @@ Testing set has 95 samples.
 <span class="c1"># Execute the &#39;train_predict&#39; function for each classifier and each training set size</span>
 <span class="n">train_predict</span><span class="p">(</span><span class="n">clf_A</span><span class="p">,</span> <span class="n">X_train_100</span><span class="p">,</span> <span class="n">y_train_100</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
 <span class="n">train_predict</span><span class="p">(</span><span class="n">clf_A</span><span class="p">,</span> <span class="n">X_train_200</span><span class="p">,</span> <span class="n">y_train_200</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
-<span class="n">train_predict</span><span class="p">(</span><span class="n">clf_A</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
+<span class="n">train_predict</span><span class="p">(</span><span class="n">clf_A</span><span class="p">,</span> <span class="n">X_train_300</span><span class="p">,</span> <span class="n">y_train_300</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
 <span class="k">print</span> <span class="s2">&quot;------------------------------------------------------------------------&quot;</span>
 <span class="n">train_predict</span><span class="p">(</span><span class="n">clf_B</span><span class="p">,</span> <span class="n">X_train_100</span><span class="p">,</span> <span class="n">y_train_100</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
 <span class="n">train_predict</span><span class="p">(</span><span class="n">clf_B</span><span class="p">,</span> <span class="n">X_train_200</span><span class="p">,</span> <span class="n">y_train_200</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
-<span class="n">train_predict</span><span class="p">(</span><span class="n">clf_B</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
+<span class="n">train_predict</span><span class="p">(</span><span class="n">clf_B</span><span class="p">,</span> <span class="n">X_train_300</span><span class="p">,</span> <span class="n">y_train_300</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
 <span class="k">print</span> <span class="s2">&quot;------------------------------------------------------------------------&quot;</span>
 <span class="n">train_predict</span><span class="p">(</span><span class="n">clf_C</span><span class="p">,</span> <span class="n">X_train_100</span><span class="p">,</span> <span class="n">y_train_100</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
 <span class="n">train_predict</span><span class="p">(</span><span class="n">clf_C</span><span class="p">,</span> <span class="n">X_train_200</span><span class="p">,</span> <span class="n">y_train_200</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
-<span class="n">train_predict</span><span class="p">(</span><span class="n">clf_C</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
+<span class="n">train_predict</span><span class="p">(</span><span class="n">clf_C</span><span class="p">,</span> <span class="n">X_train_300</span><span class="p">,</span> <span class="n">y_train_300</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
 <span class="k">print</span> <span class="s2">&quot;------------------------------------------------------------------------&quot;</span>
 <span class="n">train_predict</span><span class="p">(</span><span class="n">clf_D</span><span class="p">,</span> <span class="n">X_train_100</span><span class="p">,</span> <span class="n">y_train_100</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
 <span class="n">train_predict</span><span class="p">(</span><span class="n">clf_D</span><span class="p">,</span> <span class="n">X_train_200</span><span class="p">,</span> <span class="n">y_train_200</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
-<span class="n">train_predict</span><span class="p">(</span><span class="n">clf_D</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
+<span class="n">train_predict</span><span class="p">(</span><span class="n">clf_D</span><span class="p">,</span> <span class="n">X_train_300</span><span class="p">,</span> <span class="n">y_train_300</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
 <span class="k">print</span> <span class="s2">&quot;------------------------------------------------------------------------&quot;</span>
 <span class="n">train_predict</span><span class="p">(</span><span class="n">clf_E</span><span class="p">,</span> <span class="n">X_train_100</span><span class="p">,</span> <span class="n">y_train_100</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
 <span class="n">train_predict</span><span class="p">(</span><span class="n">clf_E</span><span class="p">,</span> <span class="n">X_train_200</span><span class="p">,</span> <span class="n">y_train_200</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
-<span class="n">train_predict</span><span class="p">(</span><span class="n">clf_E</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
+<span class="n">train_predict</span><span class="p">(</span><span class="n">clf_E</span><span class="p">,</span> <span class="n">X_train_300</span><span class="p">,</span> <span class="n">y_train_300</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12346,126 +12346,126 @@ Testing set has 95 samples.
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Training a SVC using a training set size of 100. . .
-Trained model in 0.0025 seconds
-Made predictions in 0.0018 seconds.
+Trained model in 0.0026 seconds
+Made predictions in 0.0010 seconds.
 F1 score for training set: 0.8889.
-Made predictions in 0.0012 seconds.
+Made predictions in 0.0008 seconds.
 F1 score for test set: 0.8077.
 
 
 Training a SVC using a training set size of 200. . .
-Trained model in 0.0063 seconds
-Made predictions in 0.0060 seconds.
+Trained model in 0.0038 seconds
+Made predictions in 0.0047 seconds.
 F1 score for training set: 0.8669.
-Made predictions in 0.0023 seconds.
+Made predictions in 0.0019 seconds.
 F1 score for test set: 0.8205.
 
 
 Training a SVC using a training set size of 300. . .
-Trained model in 0.0133 seconds
-Made predictions in 0.0100 seconds.
+Trained model in 0.0150 seconds
+Made predictions in 0.0078 seconds.
 F1 score for training set: 0.8565.
-Made predictions in 0.0034 seconds.
+Made predictions in 0.0028 seconds.
 F1 score for test set: 0.8205.
 
 
 ------------------------------------------------------------------------
 Training a GaussianNB using a training set size of 100. . .
-Trained model in 0.0007 seconds
-Made predictions in 0.0003 seconds.
+Trained model in 0.0018 seconds
+Made predictions in 0.0006 seconds.
 F1 score for training set: 0.5631.
-Made predictions in 0.0003 seconds.
+Made predictions in 0.0005 seconds.
 F1 score for test set: 0.3956.
 
 
 Training a GaussianNB using a training set size of 200. . .
-Trained model in 0.0007 seconds
-Made predictions in 0.0003 seconds.
+Trained model in 0.0012 seconds
+Made predictions in 0.0007 seconds.
 F1 score for training set: 0.7942.
-Made predictions in 0.0004 seconds.
+Made predictions in 0.0009 seconds.
 F1 score for test set: 0.6875.
 
 
 Training a GaussianNB using a training set size of 300. . .
-Trained model in 0.0011 seconds
-Made predictions in 0.0005 seconds.
+Trained model in 0.0015 seconds
+Made predictions in 0.0007 seconds.
 F1 score for training set: 0.7677.
-Made predictions in 0.0003 seconds.
+Made predictions in 0.0004 seconds.
 F1 score for test set: 0.7302.
 
 
 ------------------------------------------------------------------------
 Training a DecisionTreeClassifier using a training set size of 100. . .
-Trained model in 0.0009 seconds
-Made predictions in 0.0002 seconds.
+Trained model in 0.0011 seconds
+Made predictions in 0.0007 seconds.
 F1 score for training set: 1.0000.
-Made predictions in 0.0002 seconds.
+Made predictions in 0.0003 seconds.
 F1 score for test set: 0.6984.
 
 
 Training a DecisionTreeClassifier using a training set size of 200. . .
 Trained model in 0.0017 seconds
-Made predictions in 0.0004 seconds.
+Made predictions in 0.0006 seconds.
 F1 score for training set: 1.0000.
-Made predictions in 0.0002 seconds.
+Made predictions in 0.0005 seconds.
 F1 score for test set: 0.7059.
 
 
 Training a DecisionTreeClassifier using a training set size of 300. . .
-Trained model in 0.0026 seconds
-Made predictions in 0.0003 seconds.
+Trained model in 0.0033 seconds
+Made predictions in 0.0004 seconds.
 F1 score for training set: 1.0000.
-Made predictions in 0.0002 seconds.
+Made predictions in 0.0008 seconds.
 F1 score for test set: 0.7727.
 
 
 ------------------------------------------------------------------------
 Training a KNeighborsClassifier using a training set size of 100. . .
-Trained model in 0.0006 seconds
+Trained model in 0.0007 seconds
 Made predictions in 0.0019 seconds.
 F1 score for training set: 0.8750.
-Made predictions in 0.0015 seconds.
+Made predictions in 0.0020 seconds.
 F1 score for test set: 0.7755.
 
 
 Training a KNeighborsClassifier using a training set size of 200. . .
-Trained model in 0.0007 seconds
-Made predictions in 0.0029 seconds.
+Trained model in 0.0009 seconds
+Made predictions in 0.0034 seconds.
 F1 score for training set: 0.8534.
-Made predictions in 0.0022 seconds.
+Made predictions in 0.0023 seconds.
 F1 score for test set: 0.8163.
 
 
 Training a KNeighborsClassifier using a training set size of 300. . .
-Trained model in 0.0009 seconds
-Made predictions in 0.0064 seconds.
+Trained model in 0.0007 seconds
+Made predictions in 0.0063 seconds.
 F1 score for training set: 0.8610.
-Made predictions in 0.0033 seconds.
+Made predictions in 0.0030 seconds.
 F1 score for test set: 0.8143.
 
 
 ------------------------------------------------------------------------
 Training a RandomForestClassifier using a training set size of 100. . .
-Trained model in 0.0249 seconds
-Made predictions in 0.0063 seconds.
+Trained model in 0.0308 seconds
+Made predictions in 0.0073 seconds.
 F1 score for training set: 0.9931.
-Made predictions in 0.0053 seconds.
+Made predictions in 0.0061 seconds.
 F1 score for test set: 0.7591.
 
 
 Training a RandomForestClassifier using a training set size of 200. . .
-Trained model in 0.0243 seconds
-Made predictions in 0.0067 seconds.
+Trained model in 0.0287 seconds
+Made predictions in 0.0074 seconds.
 F1 score for training set: 0.9929.
-Made predictions in 0.0053 seconds.
+Made predictions in 0.0108 seconds.
 F1 score for test set: 0.7234.
 
 
 Training a RandomForestClassifier using a training set size of 300. . .
-Trained model in 0.0357 seconds
-Made predictions in 0.0068 seconds.
+Trained model in 0.0292 seconds
+Made predictions in 0.0065 seconds.
 F1 score for training set: 0.9876.
-Made predictions in 0.0126 seconds.
+Made predictions in 0.0061 seconds.
 F1 score for test set: 0.7943.
 
 
@@ -14681,7 +14681,7 @@ tEneSdZ5BzllFMlA8yUVdiyjiOVcVZ+5rnomudXWl3zEm65JHjXaweCnTAqw75LkNcNhSXI/MhDg
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
-<p>From a 10,000 foot view the Support Vector Machines algorithm separates the information into two different sets. The first set corresponds to the students that require additional assistance and the second set identifies students that does not require further assistance. This is accomplish by training the algorithm using previous students with different characteristics from the data such as gender, age, internet access, among others. Such characteristics are used to create a function that draws a boundary between the students who graduated and those who didn't. This boundary should be drawn to maximize the distance between the two sets of students. After performing the proper training of our algorithm. The SVM can look at new student's data and predict (using the function) whether or not students might need early intervention before they fail to graduate. At times, it is not easy to draw a decision boundary in lower dimensions (like 2d), therefore, the SVM will separate the two sets of students in higher dimension space (like a 3d) in wich the two sets can be separated.</p>
+<p>From a 10,000 foot view the Support Vector Machines algorithm separates the information into two different sets. The first set corresponds to the students that require additional assistance and the second set identifies students that does not require further assistance. This is accomplish by training the algorithm using previous students with different characteristics from the data such as gender, age, internet access, among others. Such characteristics are used to create a function that draws a boundary between the students who graduated and those who didn't. This boundary should be drawn to maximize the distance between the two sets of students. After performing the proper training of our algorithm. The SVM can look at new student's data and predict (using the function) whether or not students might need early intervention before they fail to graduate. At times, it is not easy to draw a decision boundary (draw a straight line to separate it into two classes) in lower dimensions (like 2d), therefore, the SVM provides has the ability to separate the two sets of students in higher dimension space (like a 3d) in wich the two sets can be separated, this is known as the kernel trick, The Kernel trick  allows the SVM to draw straight lines in high dimensions.</p>
 
 </div>
 </div>
