@@ -40,7 +40,7 @@ class LearningAgent(Agent):
             self.alpha = 0
             self.epsilon = 0
         else:
-            self.epsilon = 1 / 20 ** 2
+            self.epsilon = self.epsilon - 0.05
 
         return None
 
@@ -57,8 +57,8 @@ class LearningAgent(Agent):
         # Set 'state' as a tuple of relevant data for the agent        
         inputs["waypoint"] = waypoint
         #inputs["deadline"] = deadline
-        #del inputs['right']
-        del inputs['left']
+        del inputs['right']
+        #del inputs['left']
         state = tuple(inputs.values())
 
         return state
@@ -89,7 +89,7 @@ class LearningAgent(Agent):
             tmp = {}
             for action in self.valid_actions:
                 tmp[action] = 0
-            self.Q.update({state:tmp})
+            self.Q.update({state: tmp})
         return
 
 
