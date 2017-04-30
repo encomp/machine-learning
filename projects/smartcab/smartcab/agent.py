@@ -37,11 +37,11 @@ class LearningAgent(Agent):
             self.trial = 1
         # Update epsilon using a decay function of your choice
         else:
-            #self.epsilon = 1 - 0.99 * math.e ** (-math.e ** (-0.08 * (self.trial - 180)))
+            self.epsilon = self.alpha ** self.trial
             #self.epsilon = 1.0 / (self.trial ** 2)
             #self.epsilon = 1.0 / (self.alpha * self.trial)
             #self.epsilon = math.e ** (-1 * self.alpha * self.trial)
-            self.epsilon = math.cos(self.alpha * self.trial)
+            #self.epsilon = math.cos(self.alpha * self.trial)
 
             self.trial += 1
 
